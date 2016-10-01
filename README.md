@@ -3,6 +3,8 @@ Benchmarks for mongodb, yadm, doctrine orm and doctrine odm libraries.
 To run them you have to build docker container and run them.
 
 ```bash
+$ git clone git@github.com:makasim/yadm-benchmark.git
+$ cd yadm-benchmark
 $ composer install
 $ docker-compose build
 $ docker-compose up -d
@@ -32,6 +34,3 @@ Bench: DoctrineODM find 10000 models.     	44.00 MiB	544 ms
 ```
 
 Here's results: https://docs.google.com/spreadsheets/d/1CzVQuAz6cVAUKZyoQZyagQv48mgA3JAYJ2dNsoALV7A/edit#gid=0
-
-
-

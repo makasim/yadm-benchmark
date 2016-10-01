@@ -1,0 +1,14 @@
+{
+  "require": {
+    "makasim/yadm": "dev-master@dev",
+    "doctrine/orm": "^2.5",
+    "doctrine/mongodb-odm": "^1.1",
+    "mongodb/mongodb": "^1",
+    "symfony/stopwatch": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "YadmBenchmark\\": "src/"
+    }
+  }
+}

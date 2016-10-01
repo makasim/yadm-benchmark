@@ -1,0 +1,18 @@
+version: '2'
+services:
+  app7:
+    build: .
+    depends_on:
+      - mysql
+      - mongodb
+  app5:
+    build: { context: ., dockerfile: Dockerfile.php5 }
+    depends_on:
+      - mongodb
+  mysql:
+    image: mariadb:10
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: yadm_benchmark
+  mongodb:
+    image: mongo:3
